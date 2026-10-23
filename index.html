@@ -424,7 +424,10 @@ footer{max-width:1080px; margin:80px auto 0; padding:0 24px 66px; color:var(--mu
 .lb.tall img{max-width:520px;margin:0 auto}
 @media (max-width:860px){.ph{grid-template-columns:180px 1fr;gap:22px}}
 @media (max-width:620px){.ph{grid-template-columns:1fr;padding:20px 18px}.ins{width:62%;max-width:240px;justify-self:center}}
-.ins.wide img{object-fit:contain;object-position:center 18%}
+.ins.wide{aspect-ratio:auto;align-self:start;border-width:4px;border-radius:14px}
+.ins.wide img{height:auto;object-fit:initial}
+.ins.wide .ins-cap{position:static;display:block;border-radius:0;margin:0;padding:8px}
+.ins{text-decoration:none}
 </style></head><body>
 
 <header class="hero"><div class="hero-rings"></div><div class="hero-inner">
